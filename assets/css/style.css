@@ -33,7 +33,6 @@ img {
   width: 80px;
   text-align: right;
   padding-top: 30px;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
@@ -81,4 +80,8 @@ h2, p {
   width: 85px;
   height: 40px;
   margin: 0;
+}
+
+.img-1 {
+  clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
 }

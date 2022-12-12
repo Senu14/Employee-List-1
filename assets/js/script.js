@@ -1,19 +1,19 @@
 
-let ApiData = [];
+ let ApiData = [];   // An empty Array
 
-fetch("https://reqres.in/api/users?page=2")
+fetch("https://reqres.in/api/users?page=2")  //Fetch data from api
   .then((res) => {
-    return res.json();
+    return res.json();   // Then method res as a json file
   })
   .then((users) => {
     console.log(users);
     
     ApiData = users.data;
     ApiData.map((el) => {
-      createEl(el);
+      createEl(el);    // passe the parameter
     });
   })
-  .catch((err) => {
+  .catch((err) => {     // catch err methode
     console.error("error");
   });
 
@@ -30,4 +30,8 @@ const createEl = (user) => {
   document.getElementById("app").innerHTML += htmlS;
   console.log(htmlS);
 };
+
+
+
+
 
